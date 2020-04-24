@@ -1,0 +1,61 @@
+.tf-c-accordion {
+  font-size: 14pt;
+  font-family: "HelveticaNeueMedium", sans-serif;
+  list-style: none;
+  width: 100%;
+  transition: 0.5s;
+}
+
+.tf-c-accordion-item {
+  min-height: 50px;
+  border: 1px solid #dcdcdc;
+  border-width: 1px 0 1px 0;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin: 0;
+}
+
+.tf-c-accordion-item:first-of-type {
+  border-width: 1px 0 0 0;
+}
+
+.tf-c-accordion-item:last-of-type {
+  border-width: 0px 0px 1px 0px;
+}
+
+.tf-c-accordion-content {
+  padding-top: 0px;
+  padding-bottom: 16px;
+}
+
+.tf-c-accordion-header {
+  background: none;
+  border: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-contents: flex-start;
+  width: 100%;
+  flex-direction: row;
+  margin: 0;
+  font-size: inherit;
+  padding: 13.5px 0px;
+  position: relative;
+}
+
+.tf-c-accordion-header ~ .tf-c-accordion-content {
+  display: none;
+}
+
+.tf-c-accordion-header.active ~ .tf-c-accordion-content {
+  display: block;
+}
+
+.tf-c-accordion-content {
+  font-family: "Helvetica Neue", sans-serif; 
+  font-size: 14px;
+}
+
+.tf-c-accordion-icon {
+    padding-right: 4px;
+  height: 22.5px;
+}
